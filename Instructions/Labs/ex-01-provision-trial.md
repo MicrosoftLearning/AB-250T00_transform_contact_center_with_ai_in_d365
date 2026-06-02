@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: 'Exercise 01 - Provision your Dynamics 365 Contact Center trial'
     description: 'Sign up for a Dynamics 365 Contact Center trial, configure initial settings, enable Copilot data movement, and verify that your environment is ready for the course exercises.'
@@ -15,7 +15,7 @@ This exercise should take approximately **10** minutes to complete.
 
 ## Course scenario
 
-Throughout this course, you play the role of a system administrator at **Contoso Coffee**, a specialty coffee equipment company that sells and services espresso machines, grinders, and brewing accessories to both consumers and commercial clients. Contoso Coffee's support team handles hundreds of contacts each week — product troubleshooting, warranty claims, order questions, and machine repair scheduling — across chat, voice, and email.
+Throughout this course, you play the role of a system administrator at **Contoso Coffee**, a specialty coffee equipment company that sells and services espresso machines, grinders, and brewing accessories to both consumers and commercial clients. Contoso Coffee's support team handles hundreds of contacts each week - product troubleshooting, warranty claims, order questions, and machine repair scheduling - across chat, voice, and email.
 
 The company is implementing **Dynamics 365 Contact Center** to replace a mix of disconnected tools and manual processes. Your job is to configure the full Contact Center environment: routing work to the right agents, equipping those agents with knowledge and AI assistance, giving supervisors real-time visibility, and setting up proactive outreach for warranty renewals. Each exercise in this course builds on the previous one, so by the end you will have a complete, working Contact Center environment configured for Contoso Coffee.
 
@@ -27,15 +27,15 @@ The company is implementing **Dynamics 365 Contact Center** to replace a mix of 
 
 1. Enter your credentials as provided by your Authorized Lab Host. Select the agreement terms checkbox, then select **Start your free trial**.
 
-   > [!NOTE]
-   > If you're redirected to a sign-in page, enter your credentials and sign in.
+    > [!NOTE]
+    > If you're redirected to a sign-in page, enter your credentials and sign in.
 
 1. When prompted, select your **Country/Region**, enter a **Job Title**, and enter a phone number for verification (you can use 123456789), then select **Submit**.
 
 1. After provisioning completes, you're directed to the **Copilot Service workspace**. This may take a few minutes.
 
-   > [!NOTE]
-   > If prompted to allow microphone access, select **Allow while visiting the site**. This is required for voice channel features used later in the course.
+    > [!NOTE]
+    > If prompted to allow microphone access, select **Allow while visiting the site**. This is required for voice channel features used later in the course.
 
 ## Task 2 - Verify your environment in Power Platform admin center
 
@@ -61,8 +61,8 @@ Before AI features such as the Customer Assist Agent, Copilot conversation summa
    - If you see a **Move data across regions** checkbox, select it, review the terms of use, and select **Save**.
    - If the checkbox is not visible, your environment is in a US region where data movement is not required. Select **Cancel** and continue to Task 4.
 
-   > [!NOTE]
-   > The **Move data across regions** checkbox is only shown for non-US regions. For US-based trial environments, Copilot AI models are already hosted in region, and no additional configuration is needed.
+    > [!NOTE]
+    > The **Move data across regions** checkbox is only shown for non-US regions. For US-based trial environments, Copilot AI models are already hosted in region, and no additional configuration is needed.
 
 ## Task 4 - Explore Copilot Service admin center
 

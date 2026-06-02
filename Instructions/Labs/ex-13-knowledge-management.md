@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: 'Exercise 13 - Configure knowledge management'
     description: 'Configure knowledge management settings in Dynamics 365 Contact Center, create article categories, create a knowledge article template, and author a knowledge article.'
@@ -9,7 +9,7 @@ lab:
 
 # Exercise 13 - Configure knowledge management
 
-A knowledge base is only useful if agents can find the right article at the right moment. Contoso Coffee's support team handles hundreds of coffee machine troubleshooting questions each week — without a well-structured knowledge base, every agent reinvents the answer. In this exercise, you will configure knowledge management settings, build a category structure for Contoso Coffee's product range, create a knowledge article template, and author a troubleshooting article.
+A knowledge base is only useful if agents can find the right article at the right moment. Contoso Coffee's support team handles hundreds of coffee machine troubleshooting questions each week - without a well-structured knowledge base, every agent reinvents the answer. In this exercise, you will configure knowledge management settings, build a category structure for Contoso Coffee's product range, create a knowledge article template, and author a troubleshooting article.
 
 This exercise should take approximately **40** minutes to complete.
 
@@ -92,16 +92,16 @@ Knowledge article templates let you standardize the structure of articles so age
 
 1. In the template body, add the following sections using the formatting toolbar:
 
-   ``` plaintext
-   Symptoms
-   Describe the issue the customer is experiencing.
+    ``` plaintext
+    Symptoms
+    Describe the issue the customer is experiencing.
 
-   Steps to resolve
-   Provide numbered steps to resolve the issue.
+    Steps to resolve
+    Provide numbered steps to resolve the issue.
 
-   Escalation
-   Describe when and how to escalate if the issue is not resolved.
-   ```
+    Escalation
+    Describe when and how to escalate if the issue is not resolved.
+    ```
 
 1. Format the template using the rich text editor toolbar:
    - Select each heading (**Symptoms**, **Steps to resolve**, **Escalation**) and apply **Bold**.
@@ -111,7 +111,7 @@ Knowledge article templates let you standardize the structure of articles so age
 
 ## Task 5 - Author a knowledge article
 
-Now that the template exists, you will use it to create the LCD screen troubleshooting article. This task takes place in **Copilot Service workspace** — the agent-facing app — rather than the admin center.
+Now that the template exists, you will use it to create the LCD screen troubleshooting article. This task takes place in **Copilot Service workspace** - the agent-facing app - rather than the admin center.
 
 1. Select the app switcher (the grid icon in the top-left corner) and select **Copilot Service workspace** to switch apps.
 
@@ -122,32 +122,32 @@ Now that the template exists, you will use it to create the LCD screen troublesh
 1. In the **Select Knowledge Article template** dialog, select **Contoso Troubleshooting Template** and then select **OK**.
 
 1. On the **Content** tab, enter:
-   - **Title**: `LCD Screen Troubleshooting — Contoso Coffee Machines`
-   - **Keywords**: `LCD, screen, blank, display, troubleshoot`
-   - **Description**: `Step-by-step guide for resolving blank LCD screen issues on Contoso coffee machines.`
+    - **Title**: `LCD Screen Troubleshooting - Contoso Coffee Machines`
+    - **Keywords**: `LCD, screen, blank, display, troubleshoot`
+    - **Description**: `Step-by-step guide for resolving blank LCD screen issues on Contoso coffee machines.`
 
 1. In the article body, replace the placeholder text with the following content. Replace each italic placeholder line with the corresponding text below:
 
    Under **Symptoms**, replace the placeholder with:
 
-   ``` plaintext
-   The LCD screen on the Contoso coffee machine is blank or unresponsive.
-   ```
+    ``` plaintext
+    The LCD screen on the Contoso coffee machine is blank or unresponsive.
+    ```
 
    Under **Steps to resolve**, replace the placeholder with:
 
-   ``` plaintext
-   1. Check that the machine is plugged in and the power outlet is working.
-   2. Press and hold the power button for 10 seconds to perform a hard reset.
-   3. Unplug the machine, wait 30 seconds, then plug it back in and power on.
-   4. If the screen remains blank after reset, escalate to Tier 2 support.
-   ```
+    ``` plaintext
+    1. Check that the machine is plugged in and the power outlet is working.
+    2. Press and hold the power button for 10 seconds to perform a hard reset.
+    3. Unplug the machine, wait 30 seconds, then plug it back in and power on.
+    4. If the screen remains blank after reset, escalate to Tier 2 support.
+    ```
 
    Under **Escalation**, replace the placeholder with:
 
-   ``` plaintext
-   If the issue persists after all steps above, create a service request and assign it to the Hardware team.
-   ```
+    ``` plaintext
+    If the issue persists after all steps above, create a service request and assign it to the Hardware team.
+    ```
 
 1. Use the **Preview** feature to check how your knowledge article will look on different devices.
 
@@ -155,8 +155,8 @@ Now that the template exists, you will use it to create the LCD screen troublesh
 
 1. Select **Save.**
 
-   > [!NOTE]
-   > When you save the article, several fields on the **Summary** tab are automatically populated by the system, including **Article Public Number** (a unique reference ID), **Version number**, **Created on**, and **Language**. You don't need to fill these in manually.
+    > [!NOTE]
+    > When you save the article, several fields on the **Summary** tab are automatically populated by the system, including **Article Public Number** (a unique reference ID), **Version number**, **Created on**, and **Language**. You don't need to fill these in manually.
 
 1. In the **Related information** section, you will find 5 icons: **Related versions**, **Related translations**, **Related categories**, **Related articles**, and **Related products**. Select **Related categories.**
 
@@ -178,8 +178,8 @@ Now that the template exists, you will use it to create the LCD screen troublesh
 
 1. Select **Publish.**
 
-   > [!NOTE]
-   > Published articles are indexed for knowledge search and will appear in the agent's productivity pane knowledge search results.
+    > [!NOTE]
+    > Published articles are indexed for knowledge search and will appear in the agent's productivity pane knowledge search results.
 
 ## Verification
 

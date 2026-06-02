@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: 'Exercise 04 - Configure queues and workstreams'
     description: 'Create a messaging workstream and an advanced queue for Contoso Coffee, configure operating hours, overflow handling, and the assignment method.'
@@ -39,8 +39,8 @@ A workstream is the entry point for a channel. It defines how incoming conversat
 
 1. Select **Create**.
 
-   > [!NOTE]
-   > **Push** distribution means the system automatically assigns conversations to available agents based on capacity. **Persistent chat** allows customers to continue a previous conversation if they return within the session timeout window.
+    > [!NOTE]
+    > **Push** distribution means the system automatically assigns conversations to available agents based on capacity. **Persistent chat** allows customers to continue a previous conversation if they return within the session timeout window.
 
 1. Confirm the workstream is created and displayed with the option to configure the chat channel. You will configure the chat channel widget in Exercise 06.
 
@@ -61,8 +61,8 @@ Advanced queues work with unified routing to apply prioritization and assignment
 
 1. Select **Create**.
 
-   > [!NOTE]
-   > **Queue priority** determines the order in which queues are considered when the routing engine assigns work items. Lower numbers indicate higher priority — a queue with priority `1` is evaluated before queues with priority `2` or higher.
+    > [!NOTE]
+    > **Queue priority** determines the order in which queues are considered when the routing engine assigns work items. Lower numbers indicate higher priority - a queue with priority `1` is evaluated before queues with priority `2` or higher.
 
 1. On the **Contoso Support Queue** page, select **Add users**. Search for and add your administrator account.
 
@@ -91,7 +91,7 @@ Advanced queues work with unified routing to apply prioritization and assignment
 
 ## Task 3 - Configure overflow handling
 
-Overflow handling ensures that conversations are redirected when the queue cannot handle them — for example, when wait times are too long or the queue is outside operating hours.
+Overflow handling ensures that conversations are redirected when the queue cannot handle them - for example, when wait times are too long or the queue is outside operating hours.
 
 1. On the **Contoso Support Queue** page, scroll to the **Overflow handling** section and select **Add condition-action pair**. Under **When work items are queued**, select **Add condition-action pair**.
 
@@ -102,8 +102,8 @@ Overflow handling ensures that conversations are redirected when the queue canno
 
 1. Select **Save and close**.
 
-   > [!NOTE]
-   > This overflow condition ensures that customers are not left waiting indefinitely if all Contoso agents are at capacity. In a production deployment, you might route to a fallback team or trigger a callback.
+    > [!NOTE]
+    > This overflow condition ensures that customers are not left waiting indefinitely if all Contoso agents are at capacity. In a production deployment, you might route to a fallback team or trigger a callback.
 
 ## Task 4 - Configure the assignment method
 
@@ -117,11 +117,11 @@ The assignment method controls how conversations in the queue are distributed to
 
 1. Select **Save & close**.
 
-   > [!NOTE]
-   > **Advanced round robin** distributes work items evenly across available agents in sequence, while still respecting agent capacity and skills. In a production deployment, you can also create a custom assignment method with prioritization rules to route conversations based on attributes such as escalation count or language.
+    > [!NOTE]
+    > **Advanced round robin** distributes work items evenly across available agents in sequence, while still respecting agent capacity and skills. In a production deployment, you can also create a custom assignment method with prioritization rules to route conversations based on attributes such as escalation count or language.
 
 <!-- 
-## FUTURE TASK: Create a custom prioritization ruleset (UI broken in trials as of May 2026 — restore when fixed)
+## FUTURE TASK: Create a custom prioritization ruleset (UI broken in trials as of May 2026 - restore when fixed)
 
 Prioritization rulesets control the order in which work items in a queue are assigned to agents. Contoso Coffee wants high-priority issues assigned before standard requests.
 
@@ -187,8 +187,8 @@ Now that the queue and workstream are configured, connect them so that conversat
 
 1. Select **Save and close**.
 
-   > [!NOTE]
-   > Because no conditions are defined, all incoming conversations on this workstream are routed to the Contoso Support Queue. In a production deployment, you would define conditions — for example, routing by language or customer type — to direct conversations to different queues.
+    > [!NOTE]
+    > Because no conditions are defined, all incoming conversations on this workstream are routed to the Contoso Support Queue. In a production deployment, you would define conditions - for example, routing by language or customer type - to direct conversations to different queues.
 
 ## Verification
 

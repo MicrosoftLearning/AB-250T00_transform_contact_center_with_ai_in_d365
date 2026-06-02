@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: 'Exercise 08 - Configure advanced channel settings'
     description: 'Configure conversation lifecycle settings, consult and transfer limits, message templates, custom presence statuses, and automatic customer identification for Contoso Coffee.'
@@ -19,7 +19,7 @@ You must have completed **Exercise 06**. The **Contoso Chat Workstream** and **C
 
 ## Task 1 - Configure consult and transfer settings
 
-Consult and transfer settings control how agents can involve other agents in a conversation — either for advice (consult) or to hand the conversation off entirely (transfer).
+Consult and transfer settings control how agents can involve other agents in a conversation - either for advice (consult) or to hand the conversation off entirely (transfer).
 
 1. In the left navigation under **Customer support**, select **Channels**.
 
@@ -81,12 +81,12 @@ Custom presence statuses allow you to add organization-specific availability sta
 
 1. Select **Save and Close**.
 
-   > [!NOTE]
-   > Setting the base status to **Busy** means agents with this presence will not receive new conversations. Supervisors can still see them as distinctly "In Training" rather than generically busy.
+    > [!NOTE]
+    > Setting the base status to **Busy** means agents with this presence will not receive new conversations. Supervisors can still see them as distinctly "In Training" rather than generically busy.
 
 ## Task 4 - Review notification behavior and configure sound settings
 
-When an agent misses or rejects an incoming conversation notification, the system automatically changes their presence so they aren't assigned new work until they're ready. These settings are enabled by default — in this task you'll confirm they're active and then configure the live chat notification sound.
+When an agent misses or rejects an incoming conversation notification, the system automatically changes their presence so they aren't assigned new work until they're ready. These settings are enabled by default - in this task you'll confirm they're active and then configure the live chat notification sound.
 
 1. In the left navigation under **Support experience**, select **Workspaces**.
 
@@ -94,13 +94,13 @@ When an agent misses or rejects an incoming conversation notification, the syste
 
 1. Select the **Missed Notifications** tab. Confirm that **Change agent status to inactive after a missed notification** is set to **Yes**.
 
-   > [!NOTE]
-   > When an agent misses a notification, their presence is automatically set to **Inactive**, preventing new conversations from being assigned until they manually reset it. This avoids conversations being routed to an agent who isn't at their desk.
+    > [!NOTE]
+    > When an agent misses a notification, their presence is automatically set to **Inactive**, preventing new conversations from being assigned until they manually reset it. This avoids conversations being routed to an agent who isn't at their desk.
 
 1. Select the **Agent Reject** tab. Confirm that **Change agent status to "Do not disturb" after a notification is rejected** is set to **Yes**.
 
-   > [!NOTE]
-   > When an agent rejects a notification, their presence is set to **Do not disturb**. This signals intentional unavailability, as distinct from simply missing a notification.
+    > [!NOTE]
+    > When an agent rejects a notification, their presence is set to **Do not disturb**. This signals intentional unavailability, as distinct from simply missing a notification.
 
 1. Select the **Sound Notification settings** tab.
 

@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: 'Exercise 09 - Configure and deploy a voice agent'
     description: 'Create a Copilot Studio voice agent with generative AI orchestration, configure user consent and DTMF input, enable call recording with consent, and deploy the agent to the Contoso Voice Workstream.'
@@ -24,8 +24,8 @@ You must have completed **Exercise 07** (or have access to a pre-configured voic
 
 1. Open [**https://copilotstudio.microsoft.com**](https://copilotstudio.microsoft.com) and sign in.
 
-   > [!NOTE]
-   > If Copilot Studio does not open, copy the Environment ID from the Power Platform admin center and append it to the URL in this format: `https://copilotstudio.microsoft.com/environments/<Environment ID>`. Make sure to select the one with your contact center resources.
+    > [!NOTE]
+    > If Copilot Studio does not open, copy the Environment ID from the Power Platform admin center and append it to the URL in this format: `https://copilotstudio.microsoft.com/environments/<Environment ID>`. Make sure to select the one with your contact center resources.
 
 1. In the dialog **Welcome to Microsoft Copilot Studio**, select **Get started** and skip any welcome messages.
 
@@ -44,8 +44,8 @@ You must have completed **Exercise 07** (or have access to a pre-configured voic
 
 1. Make sure **Use generative AI orchestration for your agent's responses?** is set to **Yes**. If you make any changes, select **Save**.
 
-   > [!NOTE]
-   > Generative AI orchestration allows the agent to dynamically determine which topics to trigger based on the customer's spoken intent, rather than relying only on predefined trigger phrases. This produces more natural voice interactions.
+    > [!NOTE]
+    > Generative AI orchestration allows the agent to dynamically determine which topics to trigger based on the customer's spoken intent, rather than relying only on predefined trigger phrases. This produces more natural voice interactions.
 
 1. Navigate to the **Voice** tab.
 
@@ -53,8 +53,8 @@ You must have completed **Exercise 07** (or have access to a pre-configured voic
 
 1. Select **Basic** for **Voice type** (if it is not selected by default), then select **Save**.
 
-   > [!NOTE]
-   > **Basic voice** supports DTMF keypad input, text-to-speech, and standard workstream integration — which is what this lab uses. **Real-time voice** is a different, more advanced mode that uses speech-to-speech AI (Azure OpenAI GPT-4o) for ultra-low-latency conversations, but it does not support DTMF topics or the same workstream bot assignment flow.
+    > [!NOTE]
+    > **Basic voice** supports DTMF keypad input, text-to-speech, and standard workstream integration - which is what this lab uses. **Real-time voice** is a different, more advanced mode that uses speech-to-speech AI (Azure OpenAI GPT-4o) for ultra-low-latency conversations, but it does not support DTMF topics or the same workstream bot assignment flow.
 
 1. Select **Save** again to confirm voice type.
 
@@ -99,8 +99,8 @@ Customers who need to authenticate must enter their account PIN using the keypad
 
 1. Name the topic by selecting the **Untitled** text box above the designer. Enter `Collect Account PIN`.
 
-   > [!NOTE]
-   > You don't need to add trigger phrases to this topic. It will only be called directly from other topics using **Go to another topic**, not triggered by customer speech.
+    > [!NOTE]
+    > You don't need to add trigger phrases to this topic. It will only be called directly from other topics using **Go to another topic**, not triggered by customer speech.
 
 1. Add a **Question** node and configure it as follows:
    - **Question**: `To verify your identity, please enter your 4-digit account PIN on your keypad, followed by the pound sign.`
@@ -114,8 +114,8 @@ Customers who need to authenticate must enter their account PIN using the keypad
 
 1. Select **Save**.
 
-   > [!NOTE]
-   > By using DTMF multi-digit input rather than speech, the customer's PIN is captured as keypad tones and never transcribed. This is the required approach for PCI DSS-sensitive data such as payment card numbers and account PINs.
+    > [!NOTE]
+    > By using DTMF multi-digit input rather than speech, the customer's PIN is captured as keypad tones and never transcribed. This is the required approach for PCI DSS-sensitive data such as payment card numbers and account PINs.
 
 ## Task 4 - Enable telephony and connect the agent to Dynamics 365 Contact Center
 
@@ -147,8 +147,8 @@ Telephony is enabled at the agent level. You must enable it before connecting th
 
 1. Select **Save**.
 
-   > [!NOTE]
-   > When **Request for User Consent** is enabled, the voice agent's User Consent topic controls whether recording proceeds. If the customer declines (presses 2), the platform stops recording immediately and no transcript is generated.
+    > [!NOTE]
+    > When **Request for User Consent** is enabled, the voice agent's User Consent topic controls whether recording proceeds. If the customer declines (presses 2), the platform stops recording immediately and no transcript is generated.
 
 ## Task 6 - Add the agent to AI agents in Contact Center
 
@@ -158,8 +158,8 @@ Telephony is enabled at the agent level. You must enable it before connecting th
 
 1. Search for and select **Contoso Voice Support Agent**, then select **Connect**.
 
-   > [!NOTE]
-   > The agent now appears in the AI agents list. It may take a while for the **Voice status** and **Chat status** to load. Select the **Refresh** button in the top menu to refresh the subgrid. If you need to move on to the next lab, keep checking back.
+    > [!NOTE]
+    > The agent now appears in the AI agents list. It may take a while for the **Voice status** and **Chat status** to load. Select the **Refresh** button in the top menu to refresh the subgrid. If you need to move on to the next lab, keep checking back.
 
     You are ready to move on to the next step when **Voice status** and **Chat status** are **Connected**. If you experience a time-out or get an error, republish your agent in Copilot Studio to try again.
 

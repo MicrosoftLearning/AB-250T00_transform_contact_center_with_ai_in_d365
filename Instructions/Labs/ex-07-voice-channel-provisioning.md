@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: 'Exercise 07 - Provision the voice channel'
     description: 'Provision the Dynamics 365 Contact Center voice channel by acquiring an ACS phone number, configuring a voice workstream, and setting up inbound routing.'
@@ -28,21 +28,21 @@ You must have completed **Exercise 01** (trial environment provisioned). The voi
 1. On the **Features** page, configure the following:
    - **Country/Region**: `United States`
    - **Number type**: `Toll-free`
-   - **Calling plans**: **Receive calls** (leave **Make calls** unchecked — see note)
+   - **Calling plans**: **Receive calls** (leave **Make calls** unchecked - see note)
    - **SMS plans**: None
    - **Location**: Select any area code
 
-   > [!NOTE]
-   > **Make calls** is disabled for US Toll-free numbers because outbound calling on toll-free numbers requires carrier **toll-free verification** (US A2P regulation) before it can be enabled. This lab uses the number for **inbound** calls only.
-   >
-   > **SMS plans** options are also disabled until toll-free verification is completed. Leave **SMS plans** set to **None**.
+    > [!NOTE]
+    > **Make calls** is disabled for US Toll-free numbers because outbound calling on toll-free numbers requires carrier **toll-free verification** (US A2P regulation) before it can be enabled. This lab uses the number for **inbound** calls only.
+    >
+    > **SMS plans** options are also disabled until toll-free verification is completed. Leave **SMS plans** set to **None**.
 
 1. Select **Find numbers** to search for available numbers.
 
 1. Review the **Summary** showing your assigned number, then select **Purchase phone number**. Your trial should automatically gain the phone number.
 
-   > [!NOTE]
-   > The number must be purchased within 15 minutes of being assigned. After purchase, it appears in the phone numbers list with a status of **Ready for setup**.
+    > [!NOTE]
+    > The number must be purchased within 15 minutes of being assigned. After purchase, it appears in the phone numbers list with a status of **Ready for setup**.
 
 1. Select **Done** to return to the **Phone numbers** page.
 
@@ -78,8 +78,8 @@ You must have completed **Exercise 01** (trial environment provisioned). The voi
 
 1. Select **Save and close** and then select **Next**.
 
-   > [!TIP]
-   > If time permits, explore the options on this step before moving on. Try changing the **Hold music** and **Wait music** to a different audio file. In the **Voice profile** section, experiment with the **Voice**, **Speaking speed**, and **Pitch** settings. Use the test phrase field to preview your changes with the text: `Thank you for calling Contoso Coffee support. I'm an AI agent. How can I help you today?`
+    > [!TIP]
+    > If time permits, explore the options on this step before moving on. Try changing the **Hold music** and **Wait music** to a different audio file. In the **Voice profile** section, experiment with the **Voice**, **Speaking speed**, and **Pitch** settings. Use the test phrase field to preview your changes with the text: `Thank you for calling Contoso Coffee support. I'm an AI agent. How can I help you today?`
 
 1. On the **User features** step, configure the following:
 
