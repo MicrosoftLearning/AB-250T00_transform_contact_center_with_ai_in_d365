@@ -64,9 +64,9 @@ Advanced queues work with unified routing to apply prioritization and assignment
    > [!NOTE]
    > **Queue priority** determines the order in which queues are considered when the routing engine assigns work items. Lower numbers indicate higher priority — a queue with priority `1` is evaluated before queues with priority `2` or higher.
 
-1. On the **Contoso Support Queue** page, select **Add users**. Search for and add your administrator account.
+1. On the **Contoso Support Queue** page, select **+Add users**. Search for and add your administrator account.
 
-1. In the **Operating hours** section, select **+Set operating hours**.
+1. In the **Operating hours** section, select **+Set operation hours**.
 
 1. In the **Set operation hours** pane, select the **Name** drop-down and select **+Create new.**
 
@@ -74,9 +74,9 @@ Advanced queues work with unified routing to apply prioritization and assignment
 
 1. Select the **Working Hours** tab.
 
-1. Select **+New** and select **Working hours** from the drop-down.
+1. On the calendar toolbar, select **+ New** and then select **Working hours** from the drop-down.
 
-1. Create a schedule named `Contoso Business Hours` with the following settings:
+1. Create a schedule with the following settings:
    - Keep **today's date** as the date selected
    - **Repeat**: Select Mo, Tu, We, Th, Fr (you can either do this by selecting **Every day** and deselecting Su and Sa)
    - **Start time:** 8:00 AM
@@ -87,18 +87,22 @@ Advanced queues work with unified routing to apply prioritization and assignment
 
 1. The calendar will update.
 
-1. Select **Save and Close** to save the operating hours schedule and return to the queue.
+1. Select **Save & Close** to save the operating hours schedule and return to the queue.
+
+1. Select **+ Set operation hours** and from the **Name** drop-down, select **Contoso Business Hours**. Select **Save and close** to apply the operating hours to the queue.
 
 ## Task 3 - Configure overflow handling
 
 Overflow handling ensures that conversations are redirected when the queue cannot handle them — for example, when wait times are too long or the queue is outside operating hours.
 
-1. On the **Contoso Support Queue** page, scroll to the **Overflow handling** section and select **Add condition-action pair**. Under **When work items are queued**, select **Add condition-action pair**.
+1. On the **Contoso Support Queue** page, scroll to the **Overflow handling** section, select **Edit**.
+
+1. In the **Overflow handling** pane, under **When work items are queued**, select **+ Add condition-action pair**.
 
 1. Configure the following overflow condition:
    - **Condition**: Waiting time in queue exceeds `5` minutes
-   - **Action**: Transfer to another queue
-   - **Select a queue**: Default messaging queue (1 user)**
+   - **Action**: Transfer to a different queue
+   - **Select a queue**: Default messaging queue (1 user)
 
 1. Select **Save and close**.
 
