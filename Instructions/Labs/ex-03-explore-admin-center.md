@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: 'Exercise 03 - Explore the Copilot Service admin center and agent workspace'
     description: 'Navigate the Copilot Service admin center sections, explore user management settings, and familiarize yourself with the Copilot Service workspace.'
@@ -37,8 +37,8 @@ The admin center is organized into three main groups. Understanding this structu
 
 1. Under **Operations**, select **Calendar**. Note the options for operating hours and holiday schedules. You will configure operating hours in a later exercise.
 
-   > [!NOTE]
-   > The **Insights** section (historical and real-time analytics dashboards) is not available in trial environments. Optionally, you will explore analytics in Exercise 18 if your environment has a full license.
+    > [!NOTE]
+    > The **Insights** section (historical and real-time analytics dashboards) is not available in trial environments. Optionally, you will explore analytics in Exercise 18 if your environment has a full license.
 
 ## Task 2 - Update user queue assignments
 
@@ -56,8 +56,8 @@ Queue assignments control which queues an agent is a member of, and therefore wh
 
 1. Select **Add to all**, then select **Save**.
 
-   > [!NOTE]
-   > Assigning your account to the default messaging queue means that test conversations you send in later exercises will be routable to you. Without a queue assignment, the routing engine cannot assign work items to your account.
+    > [!NOTE]
+    > Assigning your account to the default messaging queue means that test conversations you send in later exercises will be routable to you. Without a queue assignment, the routing engine cannot assign work items to your account.
 
 ## Task 3 - Explore the Copilot Service workspace
 
@@ -66,10 +66,10 @@ The Copilot Service workspace is the environment where Contoso Coffee's service 
 1. In the top header, select **Copilot Service admin center** (the application selector). In the **Apps** picker that opens, select the **Copilot Service workspace** tile.
 
 1. Review the main areas of the workspace:
-   - **Inbox** (left navigation) — the agent's primary view of incoming and active conversations
-   - **Sessions panel** (left side) — shows open sessions; each conversation opens as a session
-   - **Communication panel** (center) — where the agent interacts with the customer
-   - **Productivity pane** (right side) — tools such as knowledge search, agent scripts, and Copilot assistance
+   - **Inbox** (left navigation) - the agent's primary view of incoming and active conversations
+   - **Sessions panel** (left side) - shows open sessions; each conversation opens as a session
+   - **Communication panel** (center) - where the agent interacts with the customer
+   - **Productivity pane** (right side) - tools such as knowledge search, agent scripts, and Copilot assistance
 
 1. Select **Inbox** from the left navigation. Select the **Filter and sort** icon and review the available filter options (All, Unread, Read) and sort options (by Customer or Date).
 

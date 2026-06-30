@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: 'Exercise 12 - Enable Teams chat collaboration'
     description: 'Enable embedded Microsoft Teams chat in Dynamics 365, configure chat connections for conversation records, and test linking a Teams conversation to a Dynamics 365 conversation record.'
@@ -12,7 +12,7 @@ lab:
 > [!IMPORTANT]
 > **Environment requirement**: This exercise requires a **Microsoft Teams license** and **tenant administrator** permission to grant consent for Enhanced Integration and Confidential Labels. If your trial does not include Teams or you do not have tenant admin access, read through the tasks and proceed to Exercise 14.
 
-Contoso Coffee's customer support representatives often need to consult colleagues from other departments — product engineers, billing specialists, or regional managers — without leaving the conversation they are working on. Embedded Teams chat allows representatives to start a Teams conversation directly from a Dynamics 365 conversation record, and keeps the chat linked to the record so future representatives can see the full consultation history. In this exercise, you will enable Teams chat integration, configure it for conversation records, and test the end-to-end experience.
+Contoso Coffee's customer support representatives often need to consult colleagues from other departments - product engineers, billing specialists, or regional managers - without leaving the conversation they are working on. Embedded Teams chat allows representatives to start a Teams conversation directly from a Dynamics 365 conversation record, and keeps the chat linked to the record so future representatives can see the full consultation history. In this exercise, you will enable Teams chat integration, configure it for conversation records, and test the end-to-end experience.
 
 This exercise should take approximately **15** minutes to complete.
 
@@ -45,8 +45,8 @@ Enhanced Integration enables deeper linking between Teams channels and Dynamics 
 
 1. When prompted, select **Sign in** and complete the admin consent flow.
 
-   > [!NOTE]
-   > Enhanced Integration requires tenant admin consent because it grants permissions across your Microsoft 365 tenant.
+    > [!NOTE]
+    > Enhanced Integration requires tenant admin consent because it grants permissions across your Microsoft 365 tenant.
 
 1. Select **Save**.
 
@@ -104,7 +104,7 @@ Connecting chats to conversation records ensures that any Teams conversations st
 
 1. Select **Start chat**.
 
-1. On the new chat that opens, enter a message: `Consulting on LCD screen issue — customer reports blank screen after power cycle.`
+1. On the new chat that opens, enter a message: `Consulting on LCD screen issue - customer reports blank screen after power cycle.`
 
 1. Send the message.
 

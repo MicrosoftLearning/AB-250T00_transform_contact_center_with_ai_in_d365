@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: 'Exercise 02 - Configure users, security roles, and capacity profiles'
     description: 'Configure role persona mappings, create a capacity profile, assign it to a user, and create a skill in preparation for routing exercises.'
@@ -33,8 +33,8 @@ Role persona mappings control which security roles are associated with the Agent
 
 1. Select the **Admin** persona and review its assigned roles. Note that the Admin persona has access to the full admin center.
 
-   > [!NOTE]
-   > Contoso Coffee uses the default persona-to-role assignments for this course. You're reviewing them here to understand the permission model before configuring users. Changes to role mappings affect all users in the environment.
+    > [!NOTE]
+    > Contoso Coffee uses the default persona-to-role assignments for this course. You're reviewing them here to understand the permission model before configuring users. Changes to role mappings affect all users in the environment.
 
 1. Select **Save and Close** without making changes.
 
@@ -54,8 +54,8 @@ A capacity profile defines how many work items can be assigned to a customer sup
    - **Reset frequency**: `Immediate`
    - **Assignment blocking**: Set to **Yes**
 
-   > [!NOTE]
-   > Setting **Assignment blocking** to **Yes** means that when a customer support representative reaches their work item limit, the system will not automatically assign them additional conversations. This prevents representatives from being overloaded.
+    > [!NOTE]
+    > Setting **Assignment blocking** to **Yes** means that when a customer support representative reaches their work item limit, the system will not automatically assign them additional conversations. This prevents representatives from being overloaded.
 
 1. Select **Save and Close**.
 
@@ -73,8 +73,8 @@ A capacity profile defines how many work items can be assigned to a customer sup
 
 1. Select **Save and Close**.
 
-   > [!NOTE]
-   > In a production deployment, you would assign the capacity profile to all customer support representatives who will handle chat conversations. For this course, assigning it to your admin account is sufficient to validate routing behavior.
+    > [!NOTE]
+    > In a production deployment, you would assign the capacity profile to all customer support representatives who will handle chat conversations. For this course, assigning it to your admin account is sufficient to validate routing behavior.
 
 ## Task 4 - Create a skill for routing
 
@@ -93,8 +93,8 @@ Skills allow the routing engine to match incoming conversations to customer supp
 
 1. Select **Save & Close**.
 
-   > [!NOTE]
-   > If the Discard suggestions? dialog appears, select **Continue anyway**.
+    > [!NOTE]
+    > If the Discard suggestions? dialog appears, select **Continue anyway**.
 
 1. Confirm that **Spanish** appears in the skills list.
 
@@ -112,8 +112,8 @@ Skills allow the routing engine to match incoming conversations to customer supp
 
 1. Select **Add to all**, then select **Save**.
 
-   > [!NOTE]
-   > The Default Rating Model offers three levels: Familiar, Proficient, and Good. Selecting **Proficient** indicates a solid working knowledge of Spanish. You will use this skill in the routing configuration in Exercise 05.
+    > [!NOTE]
+    > The Default Rating Model offers three levels: Familiar, Proficient, and Good. Selecting **Proficient** indicates a solid working knowledge of Spanish. You will use this skill in the routing configuration in Exercise 05.
 
 ## Verification
 

@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: 'Exercise 15 - Configure supervisor controls and monitor live conversations'
     description: 'Configure screen recording, add context variables, create a conversation orchestration playbook, and create a custom analytics security role.'
@@ -21,7 +21,7 @@ You must have completed **Exercise 11** (experience profiles must exist) and **E
 
 ## Task 1 - Configure screen recording for representatives
 
-Screen recording allows supervisors to review what an agent's screen looked like during a conversation — useful for quality assurance and training.
+Screen recording allows supervisors to review what an agent's screen looked like during a conversation - useful for quality assurance and training.
 
 1. In **Copilot Service admin center**, in the left navigation under **Support experience**, select **Workspaces**.
 
@@ -35,8 +35,8 @@ Screen recording allows supervisors to review what an agent's screen looked like
 
 1. Select **Save and close**.
 
-   > [!NOTE]
-   > Screen recording requires the **Dynamics 365 Contact Center desktop companion application** to be installed on the agent's device. Without the companion app, screen recording cannot capture agent screens even when enabled in the experience profile. This app is available from the admin center or via Microsoft Store deployment.
+    > [!NOTE]
+    > Screen recording requires the **Dynamics 365 Contact Center desktop companion application** to be installed on the agent's device. Without the companion app, screen recording cannot capture agent screens even when enabled in the experience profile. This app is available from the admin center or via Microsoft Store deployment.
 
 ## Task 2 - Add context variables to the chat workstream
 
@@ -62,20 +62,20 @@ Context variables enrich conversations with customer and conversation data that 
 
 1. Select **Close**.
 
-   > [!NOTE]
-   > Context variables are available in routing rules, playbook conditions, macros, and agent scripts. `CustomerTier` lets you treat premium customers differently — for example, routing them to a priority queue or increasing their escalation priority. `IssueCategory` lets you route specific issue types to specialized queues automatically.
-   >
-   > In a real implementation, these variables would be populated automatically when a chat conversation starts. There are two common approaches:
-   >
-   > - **Pre-conversation survey**: If you configure a pre-chat survey with questions like "What type of issue are you experiencing?", the customer's answer is stored as a context variable automatically. The variable name must match the survey question name exactly.
-   >
-   > - **Live chat SDK (JavaScript)**: Your website can pass variables programmatically when the chat widget loads — for example, reading the signed-in customer's account tier from your CRM and injecting it using the `setContextProvider` API. This means the values arrive silently without the customer needing to answer any questions.
-   >
-   > In this exercise, the variables are defined but not yet populated — they exist so you can reference them in routing rules and playbook conditions. Actual values would flow in at runtime from one of the above sources.
+    > [!NOTE]
+    > Context variables are available in routing rules, playbook conditions, macros, and agent scripts. `CustomerTier` lets you treat premium customers differently - for example, routing them to a priority queue or increasing their escalation priority. `IssueCategory` lets you route specific issue types to specialized queues automatically.
+    >
+    > In a real implementation, these variables would be populated automatically when a chat conversation starts. There are two common approaches:
+    >
+    > - **Pre-conversation survey**: If you configure a pre-chat survey with questions like "What type of issue are you experiencing?", the customer's answer is stored as a context variable automatically. The variable name must match the survey question name exactly.
+    >
+    > - **Live chat SDK (JavaScript)**: Your website can pass variables programmatically when the chat widget loads - for example, reading the signed-in customer's account tier from your CRM and injecting it using the `setContextProvider` API. This means the values arrive silently without the customer needing to answer any questions.
+    >
+    > In this exercise, the variables are defined but not yet populated - they exist so you can reference them in routing rules and playbook conditions. Actual values would flow in at runtime from one of the above sources.
 
 ## Task 3 - Create a conversation orchestration playbook
 
-Conversation orchestration uses AI-powered playbooks to automatically manage conversations when conditions change — for example, when no representatives are available or a customer has been waiting too long. Instead of fixed routing rules, playbooks respond dynamically throughout the conversation lifecycle.
+Conversation orchestration uses AI-powered playbooks to automatically manage conversations when conditions change - for example, when no representatives are available or a customer has been waiting too long. Instead of fixed routing rules, playbooks respond dynamically throughout the conversation lifecycle.
 
 > [!NOTE]
 > Conversation orchestration is a preview feature. Playbooks apply to voice and live chat channels only. Your trial must have at least one queue and workstream configured for messaging or voice (completed in earlier exercises).
@@ -99,8 +99,8 @@ Conversation orchestration uses AI-powered playbooks to automatically manage con
    - Select **CustomerTier**.
    - Select **IssueCategory**.
 
-   > [!NOTE]
-   > After adding each variable, you can optionally provide a **description** that controls how the variable appears in the playbook's natural language condition. This is useful for variables with technical or abbreviated names — for example, `msdyn_cust_tier_cd` would need a description like "Customer tier (Gold, Silver, Bronze)" to be readable in a playbook prompt. `CustomerTier` and `IssueCategory` are already self-explanatory, so no description is needed here.
+    > [!NOTE]
+    > After adding each variable, you can optionally provide a **description** that controls how the variable appears in the playbook's natural language condition. This is useful for variables with technical or abbreviated names - for example, `msdyn_cust_tier_cd` would need a description like "Customer tier (Gold, Silver, Bronze)" to be readable in a playbook prompt. `CustomerTier` and `IssueCategory` are already self-explanatory, so no description is needed here.
 
 1. In the **Build playbook** section, you should see the following:
 
@@ -110,8 +110,8 @@ Conversation orchestration uses AI-powered playbooks to automatically manage con
 
    `For customers where CustomerTier is Premium and IssueCategory is Urgent, if no support reps are available immediately, Offer direct callback.`
 
-   > [!NOTE]
-   > This is the high-priority branch of your playbook. When a Premium customer contacts Contoso Coffee about an Urgent issue and no representatives are available, the system immediately offers them a callback rather than making them wait. The `CustomerTier` and `IssueCategory` values you enter here must exactly match what your chat widget or pre-conversation survey will send at runtime — the comparison is case-sensitive.
+    > [!NOTE]
+    > This is the high-priority branch of your playbook. When a Premium customer contacts Contoso Coffee about an Urgent issue and no representatives are available, the system immediately offers them a callback rather than making them wait. The `CustomerTier` and `IssueCategory` values you enter here must exactly match what your chat widget or pre-conversation survey will send at runtime - the comparison is case-sensitive.
 
 1. Select the plus sign to add another playbook step.
 
@@ -119,15 +119,15 @@ Conversation orchestration uses AI-powered playbooks to automatically manage con
 
    `For all customers, if no support reps are available immediately transfer to another queue` with **Default messaging queue** set as the target queue.
 
-   > [!NOTE]
-   > This routes overflow conversations to the default messaging queue rather than leaving customers waiting with no path forward. In a production environment, you might transfer to a dedicated overflow queue with extended hours or a lower-priority agent pool.
+    > [!NOTE]
+    > This routes overflow conversations to the default messaging queue rather than leaving customers waiting with no path forward. In a production environment, you might transfer to a dedicated overflow queue with extended hours or a lower-priority agent pool.
 
 1. Select **Save** to save the playbook as a **Draft**.
 
 1. Review any validation warnings displayed. If none appear, select **Publish** and select **Publish** again to activate the playbook.
 
-   > [!NOTE]
-   > Once published, the playbook actively monitors all voice and messaging queues and triggers its overflow action whenever no representatives are available — without any manual intervention from a supervisor. To stop the playbook, return to this page, select the vertical ellipsis next to the playbook, and select **Edit** > **Deactivate**.
+    > [!NOTE]
+    > Once published, the playbook actively monitors all voice and messaging queues and triggers its overflow action whenever no representatives are available - without any manual intervention from a supervisor. To stop the playbook, return to this page, select the vertical ellipsis next to the playbook, and select **Edit** > **Deactivate**.
 
 ## Task 4 - Create a custom security role for analytics access
 

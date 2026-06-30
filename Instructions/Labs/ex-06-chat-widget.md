@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: 'Exercise 06 - Configure the live chat widget'
     description: 'Create and configure a live chat channel for Contoso Coffee, including widget appearance, automated messages, pre-chat survey, and proactive chat. Then test and validate the channel end to end.'
@@ -27,14 +27,14 @@ You must have completed **Exercise 04**. The **Contoso Chat Workstream** must ex
 
 1. On the **Channel details** page, enter:
    - **Name**: `Contoso Chat Widget`
-   - **Language**: `English – United States`
+   - **Language**: `English - United States`
 
 1. In **Window size**, select **Custom**. Configure the dimensions as follows:
    - **Width**: `400`
    - **Height**: `600`
 
-   > [!NOTE]
-   > As you adjust the width and height values, the preview chat widget on the right side of the page updates in real time — you can watch it resize as you type.
+    > [!NOTE]
+    > As you adjust the width and height values, the preview chat widget on the right side of the page updates in real time - you can watch it resize as you type.
 
 1. Select **Next**.
 
@@ -60,15 +60,15 @@ You must have completed **Exercise 04**. The **Contoso Chat Workstream** must ex
 
 1. Select **Next**.
 
-   > [!NOTE]
-   > Proactive chat allows the system to automatically open the chat widget and present an invitation to customers after a defined period of inactivity on a support page. You will configure the trigger logic in Task 4.
+    > [!NOTE]
+    > Proactive chat allows the system to automatically open the chat widget and present an invitation to customers after a defined period of inactivity on a support page. You will configure the trigger logic in Task 4.
 
 ## Task 3 - Add automated messages
 
-Automated messages are sent to customers automatically when specific events occur during a conversation — for example, when an agent is assigned or when the customer is placed in a queue.
+Automated messages are sent to customers automatically when specific events occur during a conversation - for example, when an agent is assigned or when the customer is placed in a queue.
 
-  > [!NOTE]
-  > On the **Behaviors** page, you'll see an **Authentication settings** toggle. Authentication is required for persistent chat, where conversations continue across sessions and the system needs to verify the customer's identity. Because the Contoso Chat Workstream uses live chat (not persistent chat), you can leave this toggle off.
+> [!NOTE]
+> On the **Behaviors** page, you'll see an **Authentication settings** toggle. Authentication is required for persistent chat, where conversations continue across sessions and the system needs to verify the customer's identity. Because the Contoso Chat Workstream uses live chat (not persistent chat), you can leave this toggle off.
 
 1. Under **Custom automated messages**, select **+Add message**.
 
@@ -124,8 +124,8 @@ Once saved, the chat widget generates a JavaScript snippet that embeds the widge
 
 1. Select **Copy** to copy the embed snippet to your clipboard.
 
-   > [!NOTE]
-   > In a production deployment, you would paste this snippet into the `<head>` section of your support portal web pages. For this course, you don't need to deploy the widget to a website — you use this snippet in Tasks 7 and 8 to test the channel end to end.
+    > [!NOTE]
+    > In a production deployment, you would paste this snippet into the `<head>` section of your support portal web pages. For this course, you don't need to deploy the widget to a website - you use this snippet in Tasks 7 and 8 to test the channel end to end.
 
 ## Task 6 - Open the agent workspace and set your presence
 
@@ -138,8 +138,8 @@ Before testing, you will need two browser windows or tabs:
 
 1. In the top-right corner of the workspace, check your status. Select **Available** from the status options. When your status is Available, you will see a green check mark.
 
-   > [!NOTE]
-   > The routing engine only assigns conversations to agents with an available presence status. If you remain offline, conversations will queue but not be assigned.
+    > [!NOTE]
+    > The routing engine only assigns conversations to agents with an available presence status. If you remain offline, conversations will queue but not be assigned.
 
 ## Task 7 - Send a test chat conversation
 
@@ -164,12 +164,12 @@ Before testing, you will need two browser windows or tabs:
 
 1. A notification should appear indicating a new incoming conversation. Select **Accept**.
 
-   > [!NOTE]
-   > If no notification appears after 30 seconds, verify that your presence is set to **Available** and that your administrator account is a member of **Contoso Support Queue**. Check the queue membership in **Copilot Service admin center** > **Queues** > **Contoso Support Queue**.
+    > [!NOTE]
+    > If no notification appears after 30 seconds, verify that your presence is set to **Available** and that your administrator account is a member of **Contoso Support Queue**. Check the queue membership in **Copilot Service admin center** > **Queues** > **Contoso Support Queue**.
 
 1. The conversation opens in a new session. In the communication panel, you can see the customer's message. (If it didn't open automatically, select **My work items (1)** from the left-hand pane, and select the **Visitor 1** work item.)
 
-1. Review the **Conversation details** panel — confirm the customer's name (Alex) is populated from the pre-chat survey response.
+1. Review the **Conversation details** panel - confirm the customer's name (Alex) is populated from the pre-chat survey response.
 
 1. Type a reply: `Hi Alex, I can help you with that. Let me look into your LCD screen issue.`
 

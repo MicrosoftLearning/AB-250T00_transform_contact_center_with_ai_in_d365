@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: 'Exercise 10 - Configure experience profiles and workspace templates'
     description: 'Create an experience profile for Contoso Coffee customer support representatives, configure session and notification templates, associate templates with the chat workstream, and enable the inbox.'
@@ -9,7 +9,7 @@ lab:
 
 # Exercise 10 - Configure experience profiles and workspace templates
 
-Every Contoso Coffee support agent opens the same Copilot Service workspace — but what they see inside it can be different based on their role. Experience profiles control which tools, templates, and features are available to a given group of agents. In this exercise, you will create the Contoso Support Agent experience profile, configure the session and notification templates that define how conversation sessions appear, associate those templates with the chat workstream, and enable the inbox so agents can manage their work queue from one place.
+Every Contoso Coffee support agent opens the same Copilot Service workspace - but what they see inside it can be different based on their role. Experience profiles control which tools, templates, and features are available to a given group of agents. In this exercise, you will create the Contoso Support Agent experience profile, configure the session and notification templates that define how conversation sessions appear, associate those templates with the chat workstream, and enable the inbox so agents can manage their work queue from one place.
 
 This exercise should take approximately **30** minutes to complete.
 
@@ -70,8 +70,8 @@ Each user can only belong to one experience profile at a time. Before you can as
 
 1. Select **Save and close**.
 
-   > [!NOTE]
-   > These tool toggles control what appears in the right-side productivity pane when an agent is handling a conversation. You will configure the actual scripts and knowledge settings in later exercises.
+    > [!NOTE]
+    > These tool toggles control what appears in the right-side productivity pane when an agent is handling a conversation. You will configure the actual scripts and knowledge settings in later exercises.
 
 ## Task 4 - Create an application tab template
 
@@ -95,19 +95,19 @@ Application tab templates define the pages that open automatically in the worksp
    - **entityName**: `account`
    - **entityId**: `{anchor._customerid_value}`
 
-   > [!NOTE]
-   > If the **Discard suggestions** dialog appears, select **Continue anyway** to discard the suggested changes.
+    > [!NOTE]
+    > If the **Discard suggestions** dialog appears, select **Continue anyway** to discard the suggested changes.
 
 1. After the value is filled in on each record, select **Save and close**.
 
-   > [!NOTE]
-   > The `entityName` parameter tells the tab which entity type to open (Account). The `entityId` parameter uses a slug that resolves to the customer account ID from the active conversation at runtime.
+    > [!NOTE]
+    > The `entityName` parameter tells the tab which entity type to open (Account). The `entityId` parameter uses a slug that resolves to the customer account ID from the active conversation at runtime.
 
 1. Select **Save and Close**.
 
 ## Task 5 - Create a session template
 
-Session templates define the overall layout and behavior of a conversation session — the title format, the communication panel mode, and which application tabs appear.
+Session templates define the overall layout and behavior of a conversation session - the title format, the communication panel mode, and which application tabs appear.
 
 1. On the **Workspaces** page, select **Manage** next to **Session templates**.
 
@@ -122,8 +122,8 @@ Session templates define the overall layout and behavior of a conversation sessi
    - **Description**: `Session template for Contoso Coffee chat conversations`
    - **Anchor tab**: `Customer Summary`
 
-   > [!NOTE]
-   > **Generic** type templates are channel-agnostic and appear in the session template picker for messaging workstreams like chat. **Entity** type templates are for entity routing (such as Case routing) and won't appear in a chat workstream's dropdown.
+    > [!NOTE]
+    > **Generic** type templates are channel-agnostic and appear in the session template picker for messaging workstreams like chat. **Entity** type templates are for entity routing (such as Case routing) and won't appear in a chat workstream's dropdown.
 
 1. Select **Save**.
 
@@ -133,8 +133,8 @@ Session templates define the overall layout and behavior of a conversation sessi
 
 1. Select the **Scripts** tab and set **Enable build expression** to **Yes**.
 
-   > [!NOTE]
-   > Enabling build expressions allows agent scripts to use dynamic values from the conversation context — such as customer name or case number — rather than displaying static text. This makes scripts more relevant and reduces manual copy-paste for agents.
+    > [!NOTE]
+    > Enabling build expressions allows agent scripts to use dynamic values from the conversation context - such as customer name or case number - rather than displaying static text. This makes scripts more relevant and reduces manual copy-paste for agents.
 
 1. Select **Save and Close**.
 
@@ -168,8 +168,8 @@ The inbox provides agents with a unified view of all assigned and open conversat
 
 1. Select **Save and close**.
 
-   > [!NOTE]
-   > Enabling **All active channels** makes chat and other messaging channel types available throughout the experience profile — including as record type options in inbox views. Without this setting, the **Chat** record type won't appear when you configure the inbox.
+    > [!NOTE]
+    > Enabling **All active channels** makes chat and other messaging channel types available throughout the experience profile - including as record type options in inbox views. Without this setting, the **Chat** record type won't appear when you configure the inbox.
 
 1. Scroll to the **Inbox** section and select **Edit**.
 
