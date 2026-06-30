@@ -66,7 +66,7 @@ Connecting chats to conversation records ensures that any Teams conversations st
 
 1. On the **Microsoft Teams collaboration and chat** page, scroll to the **Connect Teams chats to Dynamics 365 records** section.
 
-1. Select **+ Add record types.**
+1. Select **+ Add record types**.
 
 1. Select **Conversation** from the lookup.
 
@@ -84,7 +84,7 @@ Connecting chats to conversation records ensures that any Teams conversations st
 
 1. In the **Productivity pane** section, select **Edit**.
 
-1. Set the Teams chat toggle to **On**.
+1. Set the **Teams chats** toggle to **On**.
 
 1. Select **Save and Close**.
 
@@ -94,7 +94,10 @@ Connecting chats to conversation records ensures that any Teams conversations st
 
 1. In the left navigation, select **Conversations** and open any existing conversation record. (You may need to change the view to **All conversations** using the view selector if you have no active conversations open. If no conversations exist, use the chat widget from a previous exercise to generate one.)
 
-1. On the conversation record, in the productivity pane on the right side of the workspace, select the **Teams chats** icon.
+1. On the conversation record, in the productivity pane (the vertical toolbar on the right side of the workspace), select the **Teams chats** icon, located below the Copilot icon.
+
+   > [!NOTE]
+   > If the **Teams chats** icon doesn't appear on the productivity pane, configuration changes from earlier tasks might still be processing. Wait a few minutes, then refresh your browser or reopen **Copilot Service workspace**, and check again.
 
 1. Select **New connected chat**.
 
