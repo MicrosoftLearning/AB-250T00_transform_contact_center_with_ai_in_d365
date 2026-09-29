@@ -1,17 +1,17 @@
 ---
 lab:
     title: 'Exercise 13 - Configure knowledge management'
-    description: 'Configure knowledge management settings in Dynamics 365 Contact Center, create article categories, create a knowledge article template, and author a knowledge article.'
-    duration: '40 minutes'
+   description: 'Configure knowledge management settings in Dynamics 365 Contact Center, create and publish a knowledge article, and find the article by using knowledge search.'
+   duration: '15 minutes'
     level: 300
     islab: true
 ---
 
 # Exercise 13 - Configure knowledge management
 
-A knowledge base is only useful if agents can find the right article at the right moment. Contoso Coffee's support team handles hundreds of coffee machine troubleshooting questions each week - without a well-structured knowledge base, every agent reinvents the answer. In this exercise, you will configure knowledge management settings, build a category structure for Contoso Coffee's product range, create a knowledge article template, and author a troubleshooting article.
+A knowledge base is only useful if representatives can find the right article at the right moment. Contoso Coffee's support team handles hundreds of coffee machine troubleshooting questions each week - without a well-structured knowledge base, every representative reinvents the answer. In this exercise, you will configure knowledge management settings, build a category structure for Contoso Coffee's product range, create a knowledge article template, publish a troubleshooting article, and find it by using knowledge search.
 
-This exercise should take approximately **40** minutes to complete.
+This exercise should take approximately **15** minutes to complete.
 
 ## Before you start
 
@@ -181,6 +181,23 @@ Now that the template exists, you will use it to create the LCD screen troublesh
     > [!NOTE]
     > Published articles are indexed for knowledge search and will appear in the agent's productivity pane knowledge search results.
 
+## Task 6 - Find the published article by using knowledge search
+
+In this task, you act as a Contoso Coffee support representative and confirm that the published troubleshooting guidance can be found by using a customer's description of the issue.
+
+1. In **Copilot Service workspace**, select the **Knowledge search** icon in the app side pane.
+
+1. In the search box, enter `blank LCD screen`, and then run the search.
+
+1. Open **LCD Screen Troubleshooting - Contoso Coffee Machines** from the search results.
+
+1. Confirm that the article includes the following guidance:
+
+   - Press and hold the power button for 10 seconds to perform a hard reset.
+   - Escalate the issue to Tier 2 support if the screen remains blank.
+
+1. Return to the search results and confirm that the article is associated with the **Coffee Machines** category.
+
 ## Verification
 
 This exercise is complete when:
@@ -189,3 +206,4 @@ This exercise is complete when:
 - Three categories exist: **Contoso Products**, **Coffee Machines**, and **Warranty and Service**
 - The **Contoso Troubleshooting Template** exists and contains Symptoms, Steps to resolve, and Escalation sections
 - The **LCD Screen Troubleshooting** article is published and assigned to the **Coffee Machines** category
+- Searching for `blank LCD screen` in **Knowledge search** returns the published **LCD Screen Troubleshooting - Contoso Coffee Machines** article
