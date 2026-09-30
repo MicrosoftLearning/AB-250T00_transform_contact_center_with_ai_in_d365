@@ -1,7 +1,7 @@
 ---
 lab:
     title: 'Exercise 09 - Configure and deploy a voice agent'
-    description: 'Create a Copilot Studio voice agent with generative AI orchestration, configure user consent and DTMF input, enable call recording with consent, and deploy the agent to the Contoso Voice Workstream.'
+    description: 'Create a Copilot Studio basic voice agent with classic orchestration, configure user consent and DTMF input, enable call recording with consent, and deploy the agent to the Contoso Voice Workstream.'
     duration: '40 minutes'
     level: 300
     islab: true
@@ -12,7 +12,7 @@ lab:
 > [!IMPORTANT]
 > This exercise requires the **Contoso Voice Workstream** from Exercise 07. If you were unable to complete Exercise 07, ask your instructor for a pre-configured workstream, or read through this exercise to understand voice agent deployment concepts.
 
-Voice agents handle calls before a human agent is involved. Done well, they resolve issues autonomously or gather enough context that the handoff to a representative feels seamless. In this exercise, you will build a Copilot Studio voice agent for Contoso Coffee using generative AI orchestration, configure it to collect account PINs securely via keypad (DTMF) rather than voice, set up user consent for call recording, and deploy the agent to the voice workstream.
+Voice agents handle calls before a human agent is involved. Done well, they resolve issues autonomously or gather enough context that the handoff to a representative feels seamless. In this exercise, you will build a Copilot Studio basic voice agent for Contoso Coffee using classic orchestration, configure it to collect account PINs securely via keypad (DTMF) rather than voice, set up user consent for call recording, and deploy the agent to the voice workstream.
 
 This exercise should take approximately **40** minutes to complete.
 
@@ -22,14 +22,13 @@ You must have completed **Exercise 07** (or have access to a pre-configured voic
 
 ## Task 1 - Create a voice agent in Copilot Studio
 
-1. Open [**https://copilotstudio.microsoft.com**](https://copilotstudio.microsoft.com) and sign in.
+1. Open [**https://copilotstudio.microsoft.com**](https://copilotstudio.microsoft.com) and sign in if prompted.
 
-    > [!NOTE]
-    > If Copilot Studio does not open, copy the Environment ID from the Power Platform admin center and append it to the URL in this format: `https://copilotstudio.microsoft.com/environments/<Environment ID>`. Make sure to select the one with your contact center resources.
+1. In the lower-left corner, select the environment selector, expand **All environments**, and then select the **ContactCenter Trial** environment.
 
-1. In the dialog **Welcome to Microsoft Copilot Studio**, select **Get started** and skip any welcome messages.
+1. In the lower-left corner, select the ellipsis (**...**), and then select **Open classic experience**.
 
-1. Confirm you are in the **Contact Center Trial** environment (check the environment selector in the top right).
+1. If the feedback and welcome prompts appear, select **Skip feedback**, and then select **Get started**.
 
 1. In the **Start building from scratch** section, select **Agent**.
 
@@ -42,10 +41,10 @@ You must have completed **Exercise 07** (or have access to a pre-configured voic
 
 1. In the agent settings, navigate to **Settings** and then to the **Generative AI** tab.
 
-1. Make sure **Use generative AI orchestration for your agent's responses?** is set to **Yes**. If you make any changes, select **Save**.
+1. Set **Use generative AI orchestration for your agent's responses?** to **No**, and then select **Save**.
 
     > [!NOTE]
-    > Generative AI orchestration allows the agent to dynamically determine which topics to trigger based on the customer's spoken intent, rather than relying only on predefined trigger phrases. This produces more natural voice interactions.
+    > Basic voice and DTMF-heavy flows use classic orchestration so the agent follows the deterministic topics, questions, and keypad paths defined in this exercise. Real-time voice uses generative orchestration and a different speech-to-speech architecture.
 
 1. Navigate to the **Voice** tab.
 
@@ -177,7 +176,7 @@ Telephony is enabled at the agent level. You must enable it before connecting th
 
 This exercise is complete when:
 
-- **Contoso Voice Support Agent** exists in Copilot Studio with generative AI orchestration enabled
+- **Contoso Voice Support Agent** exists in Copilot Studio with classic orchestration enabled
 - The **User Consent** topic is connected to the **Conversation Start** system topic and saves the DTMF response to `RecordingConsent`
 - The **Collect Account PIN** topic captures the full keypad response in `AccountPIN` using **User's entire response**
 - **Contoso Voice Workstream** has transcription and recording enabled with user consent required

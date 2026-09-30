@@ -66,10 +66,13 @@ The Copilot Service workspace is the environment where Contoso Coffee's service 
 1. In the top header, select **Copilot Service admin center** (the application selector). In the **Apps** picker that opens, select the **Copilot Service workspace** tile.
 
 1. Review the main areas of the workspace:
-   - **Inbox** (left navigation) - the agent's primary view of incoming and active conversations
-   - **Sessions panel** (left side) - shows open sessions; each conversation opens as a session
-   - **Communication panel** (center) - where the agent interacts with the customer
-   - **Productivity pane** (right side) - tools such as knowledge search, agent scripts, and Copilot assistance
+    - **Inbox** (left navigation) - the representative's primary view of assigned conversations and records
+    - **Sessions panel** (left side) - shows open sessions when a conversation or record is opened
+    - **Communication panel** (center) - appears during an active conversation and is where the representative interacts with the customer
+    - **Productivity pane** (right side) - displays configured tools such as knowledge search, agent scripts, and Copilot assistance
+
+     > [!NOTE]
+     > The sessions panel, communication panel, and productivity tools might not appear until you open or accept a conversation. Their availability also depends on the experience profile assigned to your account.
 
 1. Select **Inbox** from the left navigation. Select the **Filter and sort** icon and review the available filter options (All, Unread, Read) and sort options (by Customer or Date).
 

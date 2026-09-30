@@ -10,7 +10,7 @@ lab:
 # Exercise 12 - Enable Teams chat collaboration
 
 > [!IMPORTANT]
-> **Environment requirement**: This exercise requires a **Microsoft Teams license** and might require **tenant administrator** permission to grant consent for enhanced integration. If your trial does not include Teams or you do not have tenant admin access, read through the tasks and proceed to Exercise 14.
+> **Environment requirement**: This exercise requires a **Microsoft Teams license**. If your trial does not include Teams, read through the tasks and proceed to Exercise 14.
 
 Contoso Coffee's customer support representatives often need to consult colleagues from other departments - product engineers, billing specialists, or regional managers - without leaving the conversation they are working on. Embedded Teams chat allows representatives to start a Teams conversation directly from a Dynamics 365 conversation record, and keeps the chat linked to the record so future representatives can see the full consultation history. In this exercise, you will configure Teams chat integration for conversation records and test the end-to-end experience.
 
@@ -20,45 +20,24 @@ This exercise should take approximately **15** minutes to complete.
 
 Verify the following:
 
-- Your account has the **Teams Administrator** or **Global Administrator** role in Microsoft Entra ID (required for Enhanced Integration consent)
 - A Teams license is assigned to your account in the Microsoft 365 admin center
 
-## Task 1 - Configure enhanced Teams integration
+## Task 1 - Configure Teams integration
 
-Enhanced Integration enables deeper linking between Teams channels and Dynamics 365 records.
+Teams integration lets representatives connect Teams chats to Dynamics 365 records.
 
 1. In **Copilot Service admin center**, in the left navigation under **Support experience**, select **Collaboration**.
 
 1. In the **Embedded chat using Teams** section, select **Manage**.
 
-1. On the **Microsoft Teams collaboration and chat** page, set the toggle for **Turn on the linking of Dynamics 365 records to Microsoft Teams channels** to **Yes**.
-
-1. Locate the option for enhanced Microsoft Teams integration and set it to **Yes**.
+1. On the **Microsoft Teams collaboration and chat** page, if **Turn on Microsoft Teams chats inside Dynamics 365** is available, set it to **Yes**.
 
     > [!NOTE]
-    > The option name varies by tenant. In UK trials, it is named **Turn on Enhanced Microsoft Teams Integration**. US trial environments might display a different name. If your trial does not display an enhanced integration option, continue to the next task.
+    > Teams chat is enabled by default for Copilot Service workspace, so this setting might not appear in your trial.
 
-1. If prompted, select **Sign in** and complete the admin consent flow.
+1. If **Show Teams activity in the timeline of connected records** is available, set it to **Yes**.
 
-    > [!NOTE]
-    > Enhanced Integration requires tenant admin consent because it grants permissions across your Microsoft 365 tenant.
-
-1. Select **Save**.
-
-## Task 2 - Enable confidential labels where available
-
-Confidential labels allow agents to apply Microsoft Purview sensitivity labels to Teams chats that contain sensitive customer information.
-
-> [!NOTE]
-> **Turn on Confidential Labels** is available in UK trial environments but might not appear in US trial environments. If the option is not displayed, skip this task and continue to Task 3.
-
-1. On the **Microsoft Teams collaboration and chat** page, if the **Turn on Confidential Labels** option is available, set it to **Yes**.
-
-1. If prompted, sign in and accept the consent request.
-
-1. Select **Save**.
-
-## Task 3 - Configure chat connections for conversation records
+## Task 2 - Configure chat connections for conversation records
 
 Connecting chats to conversation records ensures that any Teams conversations started from an active conversation are stored and visible within that record.
 
@@ -72,7 +51,9 @@ Connecting chats to conversation records ensures that any Teams conversations st
 
 1. Select **Save**.
 
-## Task 4 - Enable Teams chats for the experience profile
+1. Select **Save** again on the **Microsoft Teams collaboration and chat** page to save the settings.
+
+## Task 3 - Enable Teams chats for the experience profile
 
 1. On the navigation pane under **Support experience**, select **Workspaces**.
 
@@ -86,7 +67,7 @@ Connecting chats to conversation records ensures that any Teams conversations st
 
 1. Select **Save and Close**.
 
-## Task 5 - Test Teams chat from a conversation record
+## Task 4 - Test Teams chat from a conversation record
 
 1. Open **Copilot Service workspace** from the application selector.
 
@@ -115,7 +96,5 @@ Connecting chats to conversation records ensures that any Teams conversations st
 
 This exercise is complete when:
 
-- Enhanced Teams Integration is enabled where the option is available, with admin consent granted if prompted
-- Confidential Labels are enabled where the option is available
 - Conversation records are configured to link Teams chats
 - You successfully started a Teams chat from a conversation record and it appears linked to the record
